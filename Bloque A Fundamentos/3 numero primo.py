@@ -1,18 +1,15 @@
 x = int(input('Ingrese un numero para saber si es primo o no: '))
-z = x**(1/2)
-y = z%1
 lista1 = []
+lista2 = []
 if x <= 1 :
     print(False)
-elif y == 0:
-    print(False)
 else:
-    for i in range(2,int(z)+1):
-        for k in range(int(z),1,-1):
-            if k%i == 0:
-                pass
-            else:
-                if k not in lista1:
-                    lista1.append(k)
-                
-print(lista1)
+    for i in range(2,x+1):
+        if i not in lista2:
+            lista1.append(i)
+            for j in range(i*i,x+1,i):
+                lista2.append(j)        
+if x in lista1:
+    print(True)
+else:
+    print(False)

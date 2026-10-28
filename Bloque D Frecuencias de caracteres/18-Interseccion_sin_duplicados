@@ -1,0 +1,21 @@
+lista1 = []
+lista2 = []
+lista_sd = []
+while True:
+    x = input("Ingrese un numero (para la primera lista)o 'fin' para terminar: ")
+    lista1.append(x)
+    if x == 'fin':
+        break
+
+while True:
+    x = input("Ingrese un numero (para la segunda lista) o 'fin' para terminar: ")
+    lista2.append(x)
+    if x == 'fin':
+        break
+lista1.remove('fin')
+lista2.remove('fin')
+
+for c in lista1:
+    if c in lista2 and c not in lista_sd:
+        lista_sd.append(c)
+print(lista_sd)

@@ -454,7 +454,7 @@ Una **variante** es el mismo problema con alguna condición modificada. Los tér
 - Firma: `two_sum(numeros: list[int], objetivo: int) -> tuple[int, int] | None`.
 - Devuelve dos índices distintos `i < j` cuyos valores sumen el objetivo. Las entradas de esta versión tendrán como máximo una pareja válida. Si no existe, devuelve `None`.
 - Ejemplos: `([2, 7, 11, 15], 9)` produce `(0, 1)`; `([3, 3], 6)` produce `(0, 1)`; `([3], 6)` produce `None`.
-- Conserva la lista original. Empieza con una solución correcta y después busca una de tiempo lineal promedio con un diccionario.
+- Conserva la lista original. Empieza con una solución correcta y después busca una de tiempo lineal promedio con un diccionario. 
 - Variante: devolver todas las parejas de índices válidas.
 
 **16. Detectar duplicados** · `diccionarios_sets/e05_duplicados`

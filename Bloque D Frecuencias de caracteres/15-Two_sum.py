@@ -5,3 +5,6 @@ def two_sum(numeros,objetivo):
                 return (i,j)
     return None
 
+
+x=two_sum([1,2,3,4,5,6,7,8,9],8)
+print(x)

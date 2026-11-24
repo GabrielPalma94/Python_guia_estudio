@@ -24,4 +24,3 @@ c.enqueue(20)
 c.enqueue(30)
 print(c.dequeue())
 print(c.peek())
-
